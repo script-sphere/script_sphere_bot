@@ -18,7 +18,7 @@ async def main() -> None:
     )
 
     config: Config = load_config(".env")
-    bot: Bot = Bot(token=config.bot.token, parse_mode="HTML")
+    bot: Bot = Bot(token=config.bot.token)
     dp: Dispatcher = Dispatcher()
 
     dp.include_routers(router)

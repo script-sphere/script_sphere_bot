@@ -28,3 +28,6 @@ def load_config(path: str | None) -> Config:
             app_url=('APP_URL')
         )
     )
+
+
+x = 10

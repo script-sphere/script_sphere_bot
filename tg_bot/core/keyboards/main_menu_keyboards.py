@@ -1,15 +1,15 @@
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup, WebAppInfo
-from tg_bot.config import Config, load_config
+# from tg_bot.config import load_config, x
 
 
-config: Config = load_config(".env")
+# config = load_config(".env")
 
 
 keyboard: list = [
     [
         KeyboardButton(
             text="Запустить терминал",
-            web_app=WebAppInfo(url=config.bot.app_url),
+            web_app=WebAppInfo(url='https://serene-halva-5eb619.netlify.app/'),
         )
     ]
 ]
